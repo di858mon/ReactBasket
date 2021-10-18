@@ -1,9 +1,10 @@
 import React from 'react';
 
-const user = (state = [], action) => {
+const users = (state = [], action) => {
   switch (action.type) {
     case 'ADD_USER':
       console.log('Add new user');
+      console.log(state);
       return [
         ...state,
         {
@@ -17,4 +18,4 @@ const user = (state = [], action) => {
   }
 };
 
-export default user;
+export default users;
