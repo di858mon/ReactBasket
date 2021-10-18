@@ -7,10 +7,10 @@ const AddUser = () => {
   const formHandler = (event) => {
     event.preventDefault();
     console.log(event.target.elements);
-    const nUser = event.target.elements;
+    const obj = event.target.elements;
 
-    //dispatch(addNewUser(obj.name.value, obj.password.value, obj.age.value));
-    dispatch(addNewUser('123', '123', '123'));
+    dispatch(addNewUser(obj.name.value, obj.password.value, obj.age.value));
+    //dispatch(addNewUser('123', '123', '123'));
   };
 
   return (

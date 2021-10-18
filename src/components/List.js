@@ -5,9 +5,9 @@ function List(data) {
   return (
     <div>
       <ul>
-      {data.user.map((item) => {
-        <li>item.name</li>;
-      })}
+      {data.users.map((item, index)=> 
+        <li key={index}>{item.name}</li>
+      )}
       </ul>
       Test
     </div>
