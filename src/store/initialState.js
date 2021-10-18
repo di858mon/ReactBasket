@@ -1,11 +1,11 @@
 import React from 'react';
 
 const initialState = {
-  users: [
+  goods: [
     {
-      name: 'Петя',
-      password: '******',
-      age: 69,
+      id: 'Петя',
+      title: "Кресло",
+      image: "link",
     },
   ],
 };

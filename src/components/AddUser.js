@@ -1,13 +1,14 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { addNewUser } from '../actions/index.js';
+import { addNewUser } from '../actions/';
 
 const AddUser = () => {
+  const dispatch = useDispatch();
   const formHandler = (event) => {
     event.preventDefault();
     console.log(event.target.elements);
     const nUser = event.target.elements;
-    const dispatch = useDispatch();
+
     //dispatch(addNewUser(obj.name.value, obj.password.value, obj.age.value));
     dispatch(addNewUser('123', '123', '123'));
   };

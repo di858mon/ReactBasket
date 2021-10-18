@@ -6,3 +6,10 @@ export const addNewUser = (name, password, age) => ({
   password,
   age,
 });
+
+export const addGoods = (id, title, img) => ({
+  type: 'ADD_GOOD',
+  id,
+  title,
+  img,
+});
