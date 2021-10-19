@@ -9,7 +9,7 @@ function CartList() {
   return (
     <div>
       {cart.map((item) => {
-        return <CartItem title={item.name} qty={item.qty} />;
+        return <CartItem title={item.name} qty={item.qty} price={item.price}/>;
       })}
     </div>
   );

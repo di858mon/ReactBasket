@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 function CartItem(props) {
-
+const cost = props.price*props.qty;
   return (
     <>
       <div id="cart"> 
@@ -13,6 +13,7 @@ function CartItem(props) {
           <button>+</button>
           <button>-</button>
         </div>
+        <div id="cost">{cost}</div>
       </div>
     </>
   );

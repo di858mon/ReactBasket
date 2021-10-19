@@ -1,4 +1,4 @@
-#qty{
+#qty, #good{
   background-color: aquamarine;
 }
 
@@ -8,5 +8,5 @@
   margin: 20px;
   display: grid;
   grid-template-areas: 
-  "good price qty buttons";
+  "good price qty buttons cost";
 }
