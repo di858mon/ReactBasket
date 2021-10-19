@@ -1,0 +1,12 @@
+#qty{
+  background-color: aquamarine;
+}
+
+
+
+#cart{
+  margin: 20px;
+  display: grid;
+  grid-template-areas: 
+  "good qty buttons";
+}

@@ -2,8 +2,8 @@ import React from 'react';
 import { createSlice } from '@reduxjs/toolkit';
 import goodsArr from '../data/goods.json';
 
-export const goodsSlice = createSlice({
-  name: 'goods',
+export const cartSlice = createSlice({
+  name: 'cart',
   initialState: {
     goods: goodsArr,
   },

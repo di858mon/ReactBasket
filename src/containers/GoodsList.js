@@ -6,12 +6,12 @@ import Good from '../components/Good';
 function GoodsList() {
   const goods = useSelector(selectGoods);
   const dispatch = useDispatch();
-
+  
   return (
     <>
       {goods.map((item) => (
         <Good
-          title={item.titile}
+          title={item.title}
           cost={item.cost}
           articul={item.articul}
           key={item.articul}
