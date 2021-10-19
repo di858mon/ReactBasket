@@ -5,13 +5,23 @@ import goodsArr from '../data/goods.json';
 export const cartSlice = createSlice({
   name: 'cart',
   initialState: {
-    goods: goodsArr,
+    value: [
+      {
+        name: 'Товар 1',
+        qty: 1,
+        price: 10
+      },
+      {
+        name: 'Товар 2',
+        qty: 2,
+        price: 20
+      },
+    ],
   },
   reducers: {},
 });
 
+export const {} = cartSlice.actions;
+export const selectCart = (state) => state.cart.value;
 
-export const {} = goodsSlice.actions;
-export const selectGoods = (state) => state.goods.goods;
-
-export default goodsSlice.reducer;
+export default cartSlice.reducer;

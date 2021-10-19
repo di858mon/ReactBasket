@@ -1,13 +1,14 @@
 import React from 'react';
 import './style.css';
 import GoodsList from './containers/GoodsList';
-import Cart from "./components/Cart"
+
+import CartList from "./containers/CartList";
 
 export default function App() {
   return (
     <div>
       <GoodsList />
-      <Cart />
+      <CartList />
     </div>
   );
 }

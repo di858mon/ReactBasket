@@ -1,15 +1,13 @@
 import React from 'react';
 import './style.css';
 
-function Cart() {
-  const props = {
-    title: "Описание товара",
-    qty: "1 шт."
-  };
+function CartItem(props) {
+
   return (
     <>
       <div id="cart"> 
         <div id="good">{props.title}</div>
+        <div id="price">{props.price}</div>
         <div id="qty">{props.qty}</div>
         <div id="buttons">
           <button>+</button>
@@ -20,4 +18,4 @@ function Cart() {
   );
 }
 
-export default Cart;
+export default CartItem;

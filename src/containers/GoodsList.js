@@ -12,7 +12,7 @@ function GoodsList() {
       {goods.map((item) => (
         <Good
           title={item.title}
-          cost={item.cost}
+          price={item.price}
           articul={item.articul}
           key={item.articul}
         />
